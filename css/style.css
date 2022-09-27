@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;    
+}
+
+#h2-black{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    width: 850px;
+}
+
+.vid {
+    padding: 25px 0px;
+}
+
+button{
+    background: #fff;
+    color: #272727;
+    font-size: 18px;
+    border-width: 0px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+.button-2{
+    background: #F37506;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.eb-header {
+    background-color: #272626;
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#topo {
+    background: #F37506;
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    padding: 35px 0px 35px 0px ;
+}
+
+.eb-container {
+
+    background: #272727;
+    color: #fff;
+    text-align: center;
+    padding: 60px 5px;
+    display: block;
+    align-content: center;
+}
+
+
+
+.eb-container2 {
+    color: #000;
+    display: flex;
+    padding: 10px;
+    /*é sempre interessante colocar o "margin: 0 auto" quando é feito uma limitação de width em px, como é possível ver abaixo*/
+    width: 850px;
+    margin: 0 auto;
+}
+
+.container-final{
+    text-align: center;
+    padding: 80px 20px 60px 20px; 
+    /*Forma interessante de alinhar textos e elementos ao centro quando o o display em questão não é FLEX*/
+    text-align: -webkit-center;  
+}
+
+.eb-container-ico {
+    background: #fff;
+    padding: 25px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 7px 0px 0px 0px;
+    border-color: #000000;
+    border-radius: 3px;
+}
+
+.eb-ico{
+    width: 50px; 
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 25px 20px 10px 20px; 
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.footer-ctt {
+    text-align: justify;
+    width: 850px;
+    padding: 0px 0px 10px 0px;
+}
+
+.eb-acordeon{
+    color: #000;
+    width: 850px;
+    padding: 20px 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #F37506;
+    background-color: rgb(235, 235, 235);
+
+}
+
+.accordion-button:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image:none;
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+@media (max-width:888px){
+    .eb-container2 , .footer-ctt , #h2-black {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+@media (max-width:512px){
+    #vsl , #note {
+        width: auto;
+        height: auto;
+        max-width: 350px;
+    }
+}
+
+@media (max-width:888px){
+    .eb-acordeon {
+        width: auto;
+}
+}
+
+@media (max-width:720px){
+    button{
+        font-size:14px;
+    }
+}
+
+.btn-animation {
+    animation: pisca 1s;
+    margin-top: 0%;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes pisca {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.03);
+    }
+    100% {
+    transform: scale(1);
+    }
+    }
